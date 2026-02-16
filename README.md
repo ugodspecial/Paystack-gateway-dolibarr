@@ -18,8 +18,6 @@ This module does NOT require user permissions because it **interfaces with an ex
 - HelloAsso module
 - PayPlug module
 
-You won't see permission settings for users - this is correct and by design!
-
 ---
 
 ## Features
@@ -40,7 +38,7 @@ You won't see permission settings for users - this is correct and by design!
 - **KES** - Kenyan Shilling
 
 ### Integration
-- ✅ Works independently (no other payment modules required)
+- ✅ Works when Stripe is enabled
 - ✅ Test & Live modes with separate API keys
 - ✅ Bank account integration for automatic payment recording
 - ✅ Webhook support for real-time notifications
@@ -121,7 +119,7 @@ You won't see permission settings for users - this is correct and by design!
 2. Add items → Validate invoice
 3. Copy "Public payment URL" from invoice
 4. Share URL with customer
-5. Customer opens URL → Enters email → Clicks "Pay with Paystack"
+5. Customer opens URL → Clicks "Pay with Paystack"
 6. Redirects to Paystack → Completes payment
 7. Returns to Dolibarr → Invoice automatically marked "Paid"
 ```
@@ -177,11 +175,11 @@ You won't see permission settings for users - this is correct and by design!
 4. Open in browser
 5. Enter email address
 6. Click "Pay with Paystack" button
-7. Should redirect to Paystack ✅
+7. Should redirect to Paystack
 8. Enter test card details
 9. Complete payment
 10. Should redirect back to Dolibarr
-11. Invoice should show "Paid" ✅
+11. Invoice should show "Paid"
 ```
 
 ---
@@ -433,6 +431,7 @@ GNU General Public License v3.0 or later
 
 ## Credits
 
+**Creator:** YoungAndCode LTD (youngandcodeltd.com)
 **Module Type:** External Payment Gateway  
 **Interfaces With:** Paystack Payment System (paystack.com)  
 **Developed For:** Dolibarr ERP/CRM Community  
